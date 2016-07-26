@@ -18,6 +18,7 @@
 		C233B1C71D3A8609004317CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C233B1C51D3A8609004317CE /* LaunchScreen.storyboard */; };
 		C233B1D21D3A8609004317CE /* MhusicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C233B1D11D3A8609004317CE /* MhusicTests.swift */; };
 		C233B1DD1D3A8609004317CE /* MhusicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C233B1DC1D3A8609004317CE /* MhusicUITests.swift */; };
+		C2C6FA9B1D468F8500EFFCEE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C6FA9A1D468F8500EFFCEE /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		C233B1D81D3A8609004317CE /* MhusicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MhusicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C233B1DC1D3A8609004317CE /* MhusicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MhusicUITests.swift; sourceTree = "<group>"; };
 		C233B1DE1D3A8609004317CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2C6FA9A1D468F8500EFFCEE /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = Main/MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 			children = (
 				C233B1B91D3A8609004317CE /* AppDelegate.swift */,
 				C233B1BB1D3A8609004317CE /* ViewController.swift */,
+				C2C6FA9A1D468F8500EFFCEE /* MainViewController.swift */,
 				C233B1BD1D3A8609004317CE /* Main.storyboard */,
 				C233B1C31D3A8609004317CE /* Assets.xcassets */,
 				C233B1C51D3A8609004317CE /* LaunchScreen.storyboard */,
@@ -285,6 +288,7 @@
 				C233B1BC1D3A8609004317CE /* ViewController.swift in Sources */,
 				C233B1C21D3A8609004317CE /* Mhusic.xcdatamodeld in Sources */,
 				C233B1BA1D3A8609004317CE /* AppDelegate.swift in Sources */,
+				C2C6FA9B1D468F8500EFFCEE /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

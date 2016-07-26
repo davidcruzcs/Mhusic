@@ -30,9 +30,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SPTAudioStreamingDelegate
         SPTAuth.defaultInstance().redirectURL = NSURL(string: "mhusic://callback")
         SPTAuth.defaultInstance().requestedScopes = [SPTAuthStreamingScope]
         
-        let urlSpotifyLogin = SPTAuth.defaultInstance().loginURL
-        
-        application.performSelector(#selector(UIApplication.openURL(_:)), withObject: urlSpotifyLogin, afterDelay: 0.1)
         
         return true
     }
@@ -73,41 +70,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SPTAudioStreamingDelegate
         
     }
     
-    func audioStreamingDidLogin(audioStreaming: SPTAudioStreamingController!) {
-        
-        let urlSong = NSURL(string: "spotify:user:juancruzs:playlist:0k3Imke9lj2d04sGci9Vlq")
-        
-        self.spotifyPlayer.playURIs([urlSong!], withOptions: SPTPlayOptions.init()) { (error) in
-            if error == nil {
-                
-                self.getUserInformation()
-                
-            } else {
-                print("Error Playing: \(error)")
-            }
-        }
-        
-        
-    }
     
-    func getUserInformation () {
-        
-        SPTUser.requestCurrentUserWithAccessToken(userSession.accessToken) { (error, user) in
-            if error == nil {
-                
-                self.currentUser = user as! SPTUser
-                
-                print("\(self.currentUser)")
-                
-            } else {
-                
-                print("Error getting user info")
-                
-            }
-            
-        }
-        
-    }
+    
+    
 
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
